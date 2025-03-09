@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>María Fide Coffee Brunch</title>
+    <link rel="shortcut icon" href="imagenes/logos/logoMariaFide.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/configGlobal.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/carousel.js" defer></script>
+    <script src="js/scrolling.js" defer></script>
+    <script src="js/submitForm.js" defer></script>
+    <script src="js/hamburgerMenu.js" defer></script>
+</head>
+<body>
+    <!-- Header with Sticky Navigation -->
+    <header>
+        <div class="header-content">
+            <img class="logo" src="imagenes/logos/logoMariaFide.png" alt="Maria Fide Logo">
+            
+            <!-- Ícono del menú hamburguesa -->
+            <div class="hamburger-menu" id="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+    
+            <!-- Menú de navegación -->
+            <nav class="navegacion" id="navegacion">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="menu.html">Menú</a></li>
+                    <li><a href="index.html#mapa">Ubicación</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Carousel -->
+    <section id="hero">
+        <div class="slider-frame">
+            <div class="slider-images">
+                <div class="img-container">
+                    <img src="imagenes/mariaFideLocal.png" alt="Imagen 1">
+                </div>
+                <div class="img-container">
+                    <img src="imagenes/tortaDosAmores.png" alt="Imagen 2">
+                </div>
+                <div class="img-container">
+                    <img src="imagenes/tortaIndiana.jpg" alt="Imagen 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+<!-- Menu Section -->
+<section id="cartaMenu">
+    <h2>Nuestro Menú</h2>
+    <div class="menu-grid">
+        <div class="menu-item">
+            <div class="menu-item-image">
+                <img src="imagenes/tortaIndiana.jpg" alt="Menu Item 1">
+            </div>
+            <div class="menu-item-content">
+                <h3>Torta Indiana</h3>
+                <p>Masa liviana con un toque de canela y leche condensada.
+                <span class="price">23.000 Gs</span>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-item-image">
+                <img src="imagenes/mixto.jpg" alt="Menu Item 2">
+            </div>
+            <div class="menu-item-content">
+                <h3>Mixto</h3>
+                <p>Mixto de pan casero.</p>
+                <span class="price">16.000 Gs</span>
+            </div>
+        </div>
+        <!-- Repeat for other menu items -->
+    </div>
+    <a href="menu.html" class="ver-mas-button">Ver Más</a>
+</section>
+
+    <!-- Map Section -->
+    <section id="mapa">
+        <h2>Ubicación</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.4596304427655!2d-54.63948319999997!3d-25.523062300000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f68f2ae52b1687%3A0x6a25a31d0e6772f2!2sMaria%20Fide%20Brunch!5e0!3m2!1ses-419!2spy!4v1738344897619!5m2!1ses-419!2spy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contacto">
+        <div class="contact-content">
+            <h2>Contáctanos</h2>
+            <p>¿Tienes alguna pregunta o quieres reservar una mesa? ¡Escríbenos!</p>
+            <div class="contact-wrapper">
+                <form class="contact-form" action="/php/submitForm.php" method="POST">
+                    <div class="form-group">
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="sujeto" name="sujeto" placeholder="Asunto" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="mensaje" name="mensaje" placeholder="Mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <p><strong>Email:</strong> mariafidebrunch1@gmail.com</p>
+                    <p><strong>Teléfono:</strong> +595 983506330</p>
+                    <p><strong>Dirección:</strong> Paseo Palmetto, Calle Monday, CDE, Paraguay</p>    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>Maria Fide Coffee Brunch - Copyright</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/mariafidecoffeebrunch?igsh=MTN1ejVqb250a3FxMg==">
+                <img src="imagenes/logos/instaLogo50px.png" alt="Instagram">
+            </a>
+            <a href="https://www.tiktok.com/@mariafidecoffeebrunch?_t=ZM-8tWvrKGUdnx&_r=1">
+                <img src="imagenes/logos/tiktokLogo50px.png" alt="TikTok">
+            </a>
+            <a href="https://www.facebook.com/MariaFideEventos/">
+                <img src="imagenes/logos/facebookLogo50px.png" alt="Facebook">
+            </a>
+        </div>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="menu.html">Menú</a></li>
+            <li><a href="index.html#mapa">Ubicación</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

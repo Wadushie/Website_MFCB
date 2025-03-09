@@ -1,0 +1,229 @@
+/* Menu Page Styles */
+
+/* Body */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #111;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #111;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+.navegacion ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navegacion ul li a {
+    text-decoration: none;
+    color: #111;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navegacion ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el menú hamburguesa */
+.hamburger-menu {
+    display: none; /* Oculto por defecto en pantallas grandes */
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    z-index: 1001; /* Asegura que esté por encima del menú */
+}
+
+.hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #111;
+    transition: 0.4s;
+}
+
+/* Animación para el ícono del menú hamburguesa */
+.hamburger-menu.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Estilos para pantallas pequeñas (responsive) */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: flex; /* Mostrar el ícono en pantallas pequeñas */
+    }
+
+    .navegacion {
+        display: none; /* Ocultar el menú por defecto en pantallas pequeñas */
+        position: absolute;
+        top: 80px; /* Ajusta según la altura del header */
+        right: 20px;
+        background-color: #fff;
+        border: 2px solid #111; /* Coincide con el estilo del header */
+        border-radius: 5px;
+        padding: 20px;
+        z-index: 1000;
+    }
+
+    .navegacion.active {
+        display: block; /* Mostrar el menú cuando tenga la clase "active" */
+    }
+
+    .navegacion ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* Menu Section */
+#menu {
+    padding: 120px 20px 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#menu h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #111;
+    padding-bottom: 10px;
+    font-size: 36px;
+}
+
+.menu-category {
+    margin-bottom: 40px;
+}
+
+.menu-category h3 {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #111;
+    padding-bottom: 10px;
+    font-size: 24px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.menu-item h4 {
+    margin: 0;
+    font-weight: normal;
+}
+
+.menu-item p {
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.social-links {
+    margin: 20px 0;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 30px;
+    height: auto;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: darkgoldenrod;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navegacion ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #menu h2 {
+        font-size: 28px;
+    }
+
+    .menu-category h3 {
+        font-size: 20px;
+    }
+
+    .menu-item {
+        font-size: 16px;
+    }
+}

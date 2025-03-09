@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+colors{
+    --white: rgba(254, 254, 254, 1);
+    --white-2: rgba(253, 253, 254, 1);
+    --caramel: rgba(190, 128, 65, 1);
+    --white-3: rgba(254, 254, 254, 1);
+    --linen: rgba(240, 230, 220, 1);
+}
